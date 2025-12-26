@@ -14,7 +14,7 @@ for chave, valor in aluno.items():
     
 # Criando dados mais complexos para filtragem e percorrer os dados
 usuarios = [
-    {"nome": "Ana", "idade": 25},
+    {"nome": "Ana", "idade": 22},
     {"nome": "Carlos", "idade": 17},
     {"nome": "João", "idade": 30}
 ]
