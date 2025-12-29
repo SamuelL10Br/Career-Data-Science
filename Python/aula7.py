@@ -23,3 +23,15 @@ with open("dados.txt","r", encoding="utf-8") as arquivo:
 with open("dados.txt", "r", encoding="utf-8") as arquivo:
     for linha in arquivo:
         print(linha.strip())
+
+# Criando arquivo CSV
+with open("dados.csv","w", encoding="utf-8") as arquivo:
+    arquivo.write("nome,idade,profissão\n")
+    arquivo.write("Samuel,22,Cientista de Dados\n")
+    arquivo.write("Ana,39,Analista de Dados\n")
+    arquivo.write("José,24,Desenvolvedor Mobile\n")
+
+# Lendo arquivo CSV
+with open("dados.csv","r",encoding="utf-8") as arquivo:
+    for linha in arquivo:
+        print(linha.strip())
