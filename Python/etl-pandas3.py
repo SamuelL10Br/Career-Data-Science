@@ -50,4 +50,19 @@ df = df[df["idade"] >= 21]
 df.to_csv("dados_finais.csv", index=False)
 print("\nDados gerados com sucesso!")
 
+# ETL with sort_values by salary wage high than 5000. hands-on activitys
+import pandas as pd
 
+#Extract
+df = pd.read_csv("dados_finais.csv")
+
+#Transform
+df = df[df["salario"] > 5000]
+df = df.sort_values(by="salario", ascending=False)
+
+print("\nSalários filtrados e ordenados:")
+print(df)
+
+# Load 
+df.to_csv("Dados_analise.csv", index=False)
+print("\nArquivo 'dados_analise.csv' gerado com sucesso.")
